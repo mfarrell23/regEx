@@ -6,7 +6,7 @@ For a quick reference, see the MDN JavaScript Guide's Regular Expressions Cheats
 ## Summary
 
 Basically a regex of an email would be composed of an object that states that an lowercase letters between and z can be used, then any of the uppercase letters between a and z can be used. Then it says any numbers between 0 and 9 can be there. then it adds in the special characters that emials allow. Next it does the @ symbol that all emails have. Then it again takes in all the upper and lowercase letters and numbers for all of the different domains. Last it adds all the lower and uppercase letters and numbers for the .com or, org, or any of the other endings there are for emails. This is essentially the formula for checking documents for an email address. Simply put, Michelle@gmail.com would be picked up by making sure we cover all of the possibilities. 
-An example would be: ^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$
+An couple examples would be: ^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$ and /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -89,7 +89,11 @@ examples of metacharacters are: \d [0-9] [A-Za-z0-9_]
 
 ### The OR Operator
 
+The alternation or operator, the character that looks like this[|]. 
 
+This is the OR operator, This is set in each section of the regex matching an email. This says it will either be this [|]or that. An example is: [abc|xyz].
+
+When this is placed between any 2 regular expressions, the result mathes the union of the strings that A and B match.
 
 ### Flags
 
